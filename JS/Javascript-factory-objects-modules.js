@@ -25,3 +25,26 @@ function Person(name, surname) {
 let greg = new Person('Greg', 'Beasly')
 greg.changeName = 'Barent'
 console.log(greg.name) // 'Barent'! Now we can see the change!
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const Gameboard = (()=>{
+
+  const board = new Array(9).fill('');
+
+  const setCell = (index, value) => {
+    // a function that updates the contents of a given array index
+  }
+  const resetBoard = () => {
+    // a function that resets the board to empty
+  }
+  const getBoard = () => {
+    // a function that returns **a copy** of the board.
+  }
+  return {
+    setCell,
+    getBoard,
+    resetBoard
+  }
+})();
+
+
